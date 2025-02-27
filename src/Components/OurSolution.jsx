@@ -82,7 +82,7 @@ const OurSolution = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 items-start relative mt-20  ">
           <div
             id="circle-sec"
-            className=" lg:flex justify-center sticky top-40 hidden lg:block "
+            className=" lg:flex justify-center sticky top-40 hidden md:block "
           >
             <div
               id="circle-wrapper"

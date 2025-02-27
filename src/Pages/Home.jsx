@@ -1,57 +1,18 @@
-<<<<<<< HEAD
 import React, { useEffect, Suspense, useRef, useState } from 'react';
 import './Home.css';
-=======
-// import React from 'react';
-
-// const Home = () => {
-//   return (
-//     <div className="relative w-full h-[400px]">
-
-//       
-//       <img
-//         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDZT0qh99IVOiZ1NdoCsrP4_mSQzuAFRBVzw&s"
-//         className="w-full h-full object-cover"
-//         alt="Background"
-//       />
-
-//       
-//       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-{/* <div className=" bgbody"></div>
-
-
-            <div className="absolute  bg-black opacity-50"></div> */}
-//    
-//       <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/3 text-center">
-        // <h3 className="text-2xl font-semibold text-white">QPIOWEFGBiuq;b</h3>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Home;
-
-
-
-
-import React, { useEffect } from 'react';
 import './home.css';
->>>>>>> 4ec9abdb2fae28a82a21c1051fdffbfbeb792261
 import '../CSS/tying.css';
 import ParticleEffect from '../Components/ParticleEffect';
 import TypewriterEffect from '../Components/TyingWriter'; 
 import useIntersectionObserver from '../Components/useIntersectionObserver'; 
-
 import About from './About';
 
 // Lazy load all components
 const OurServices = React.lazy(() => import('../Components/OurServices'));
-// const CountSection = React.lazy(() => import('../Components/CountSection'));
 const OurSolution = React.lazy(() => import('../Components/OurSolution'));
 const OurPortfolio = React.lazy(() => import('../Components/OurPortfolio'));
 const Technology = React.lazy(() => import('../Components/Technology'));
 const LetterMarquee = React.lazy(() => import('../Components/marqueelogo/LetterMarquee'));
-
 
 const Home = () => {
   // Create refs for each component
@@ -140,9 +101,6 @@ const Home = () => {
     };
   }, []);
 
-
-
-
   return (
     <>
       {/* Hero Section */}
@@ -202,10 +160,8 @@ const Home = () => {
         </div>
       </div>
 
-
-
       {/* About Us Section */}
-         <About/>
+      <About />
 
       {/* Lazy-Loaded Components with Intersection Observer */}
       <div ref={ourServicesRef}>
@@ -217,7 +173,6 @@ const Home = () => {
           <div className="text-(--white) text-center py-20">Loading Our Services...</div>
         )}
       </div>
-
 
       <div ref={ourSolutionRef}>
         {visibleComponents.ourSolution ? (

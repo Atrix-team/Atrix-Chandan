@@ -13,7 +13,7 @@ const TechnologySecPart = () => {
     const data = activeSection === 'frontend' ? frontend : backend;
 
     return (
-        <div className='p-20'>
+        <div className='p-20 '>
             <style>
                 {`
                 .icon-ul li:nth-child(1) > div, .icon-ul li:nth-child(6) > div {
@@ -42,16 +42,16 @@ const TechnologySecPart = () => {
                 >
                     Back-end
                     {activeSection === 'backend' && (
-                        <span className="absolute left-0 right-0 -bottom-1 mx-auto w-4 h-3 bg-(--blue) rotate-45"></span>
+                        <span className="absolute left-0 right-0 -bottom-1 mx-auto w-4 h-3 bg-(--blue) rotate-45  "></span>
                     )}
                 </h6>
             </div>
 
-            <div className='max-w-[1300px] mx-auto'>
-                <ul className='flex flex-wrap items-end justify-center icon-ul'>
+            <div className='max-w-[1300px] mx-auto mt-10 '>
+                <ul className='lg:flex  lg:flex-wrap items-end justify-center icon-ul '>
                     {data.map((item, index) => (
-                        <li key={index} className='flex items-end w-[16.66%] p-[10px]'>
-                            <div className='bg-(--black) rounded-lg w-full flex items-center justify-center flex-col min-h-[180px]'>
+                        <li key={index} className='flex items-end lg:w-[16.66%] lg:p-[10px]   '>
+                            <div className='bg-(--black) mt-10 rounded-lg w-full flex items-center justify-center flex-col min-h-[180px]  '>
                                 <div className='flex justify-center'>
                                     <img src={item.icons} alt={item.TechnologyName} />
                                 </div>

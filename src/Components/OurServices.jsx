@@ -99,8 +99,10 @@ const OurServices = () => {
               >
                 <h3 className="text-[30px] mt-[10px]">
                   <span className="inline-block w-[35px] h-[35px] bg-gradient-to-r from-[#1a8ef7] to-[#14624b] rounded-full transform translate-y-[8px] mr-[4px]"> <img className='mt-1 brightness-[6.5] w-6 h-6 ml-1 ' src={logo} alt="" /> </span> 
+                  
                   {service.title}
                 </h3> 
+
                 <p className="text-[#ffffffb3] text-[16px] mt-[50px] leading-[2.2rem]">{service.description}</p>
                 <div className="mt-[35px] flex flex-wrap">
                   <a href="#" className="text-white bg-gradient-to-r from-[#1a8ef7] to-[#14624b] border-2 border-transparent rounded-[24px] px-[24px] py-[7px] inline-block mt-[10px] mr-[10px] transition-all duration-300 ease hover:bg-gradient-to-r hover:from-[#1a8ef7] hover:to-[#14624b]">

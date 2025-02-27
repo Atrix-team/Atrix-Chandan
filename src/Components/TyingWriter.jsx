@@ -29,21 +29,16 @@ const TypewriterEffect = ({ text, speed, deleteSpeed, delay }) => {
       timeoutRef.current = setTimeout(typeText, isDeleting ? deleteSpeed : speed);
     }
 
-    
     return () => clearTimeout(timeoutRef.current);
   }, [displayText, isDeleting, text, speed, deleteSpeed]);
 
   return (
-    <div>
+    <div className="w-full">
       <p 
+        className="inline-block whitespace-nowrap overflow-hidden border-r-2 border-gray-300 animate-blink"
         style={{
-          display: 'inline-block',
-          whiteSpace: 'nowrap',
-          overflow: 'hidden',
-          borderRight: '2px solid rgb(216, 216, 216)', 
-          animation: 'blink 0.5s step-end infinite normal', 
-          height:"55px",
-          marginTop:"9px"
+          height: "55px",
+          marginTop: "9px"
         }}
       >
         {displayText}

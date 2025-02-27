@@ -21,7 +21,7 @@ const Technology = () => {
               ></path>
             </svg>
           </div>
-          <div className="mt-10 text-end">
+          <div className="mt-10 md:text-end">
             <p className="w-86 text-gray font-bold mt-4">
               Offer a wide range of services to help businesses establish and
               enhance their online presence.
